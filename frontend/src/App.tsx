@@ -1,7 +1,8 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { HeaderLayout } from './components/layouts/HeaderLayout'
-import './App.css'
+import { HeaderLayout } from './components/layouts/HeaderLayout';
 import { LandingPage } from './pages/landing/LandingPage';
+import { Demo } from './pages/demo/Demo';
+import './App.css';
 
 
 function App() {
@@ -13,10 +14,14 @@ function App() {
         {
           path: '/',
           element: <LandingPage />
-        }
+        },
+        {
+          path: '/demo',
+          element: <Demo />
+        },
       ]
     }
-  ])
+  ]);
   return (
     <RouterProvider router={router} />
   )

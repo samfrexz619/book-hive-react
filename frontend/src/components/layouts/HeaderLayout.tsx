@@ -1,4 +1,4 @@
-import { Link, Outlet } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom';
 import logo from '@/assets/images/logo.svg';
 import UiIcons from '../ui/uiIcons/UiIcons';
 
@@ -20,7 +20,8 @@ export const HeaderLayout = () => {
       path: 'my account',
       iconName: 'profile'
     },
-  ]
+  ];
+
   return (
     <main className='w-full'>
       <header className='w-full bg-white h-20'>
@@ -32,7 +33,7 @@ export const HeaderLayout = () => {
             {
               navLinks.map(link => (
                 <li key={link.id}>
-                  <Link to={'#'} className='flex flex-col items-center gap-y-2'>
+                  <Link to={'#'} className='flex text-black1 flex-col items-center gap-y-2'>
                     <UiIcons iconName={link.iconName} />
                     <p className='capitalize text-14 font-medium'>{link.path}</p>
                   </Link>
@@ -43,9 +44,9 @@ export const HeaderLayout = () => {
           </ul>
         </nav>
       </header>
-      <section>
+      <section className='reset'>
         <Outlet />
       </section>
     </main>
   )
-}
+};

@@ -11,6 +11,12 @@ export default {
       },
       fontSize: {
         '14': '14px',
+      },
+      colors: {
+        'black1': '#1C1B20',
+        'banner': 'rgba(93, 87, 145, 0.5)',
+        'grey1': '#C9C5D0',
+        'pry': '#5D5791',
       }
     },
   },

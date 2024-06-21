@@ -12,7 +12,7 @@ const UiIcons: React.FC<Props> = (props) => {
     <span>
       {
         iconName === 'like'
-          ? <svg width="25" height="24">
+          ? <svg width="25" height="24" data-testid="like">
             <use xlinkHref="/sprite.svg#like" />
           </svg>
           : iconName === 'cart'

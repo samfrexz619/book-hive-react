@@ -52,3 +52,15 @@ h5,
 h6 {
   font-family: playFair;
 }
+
+.reset {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.reset::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+}
