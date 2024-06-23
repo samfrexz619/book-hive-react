@@ -58,7 +58,7 @@ const Carousel: React.FC<Props> = (props) => {
       >
         {
           slideItems.map((slideItem, idx) => (
-            <picture key={slideItem.id} className={`${currentSlide === idx ? 'block' : 'hidden'}`}>
+            <picture key={slideItem.id} className={`${currentSlide === idx ? 'block' : 'hidden'} h-[432px] md:h-auto`}>
               <source
                 media='(min-width: 768px)'
                 srcSet={slideItem.imageSizes[0]}
