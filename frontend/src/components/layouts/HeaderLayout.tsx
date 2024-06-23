@@ -1,6 +1,6 @@
 import { Link, Outlet } from 'react-router-dom';
 import logo from '@/assets/images/logo.svg';
-import UiIcons from '../ui/uiIcons/UiIcons';
+import { UiIcons as Icon } from '../ui/uiIcons/UiIcons';
 
 
 export const HeaderLayout = () => {
@@ -26,15 +26,21 @@ export const HeaderLayout = () => {
     <main className='w-full'>
       <header className='w-full bg-white h-20'>
         <nav className='h-full w-93 mx-auto flex items-center justify-between'>
+          <button className='text-black1 block lg:hidden'>
+            <Icon iconName='menu' />
+          </button>
           <Link to={'/'}>
-            <img src={logo} alt="logo" className='w-60' />
+            <img src={logo} alt="logo" className='lg:w-60 md:w-[183px] w-36' />
           </Link>
-          <ul className='flex h-full items-center gap-x-5'>
+          <button className='block lg:hidden'>
+            <Icon iconName='search' />
+          </button>
+          <ul className='hidden lg:flex h-full items-center gap-x-5'>
             {
               navLinks.map(link => (
                 <li key={link.id}>
                   <Link to={'#'} className='flex text-black1 flex-col items-center gap-y-2'>
-                    <UiIcons iconName={link.iconName} />
+                    <Icon iconName={link.iconName} />
                     <p className='capitalize text-14 font-medium'>{link.path}</p>
                   </Link>
                 </li>

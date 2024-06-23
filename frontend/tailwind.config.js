@@ -11,6 +11,10 @@ export default {
       },
       fontSize: {
         '14': '14px',
+        '16': '16px',
+        '22': '22px',
+        '32': '32px',
+        '36': '36px',
       },
       colors: {
         'black1': '#1C1B20',

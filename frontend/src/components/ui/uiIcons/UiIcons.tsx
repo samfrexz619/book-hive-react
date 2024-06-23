@@ -4,7 +4,7 @@ interface Props {
   iconName: string;
 }
 
-const UiIcons: React.FC<Props> = (props) => {
+export const UiIcons: React.FC<Props> = (props) => {
 
   const { iconName } = props;
 
@@ -23,12 +23,14 @@ const UiIcons: React.FC<Props> = (props) => {
               ? <svg width="25" height="24">
                 <use xlinkHref="/sprite.svg#account" />
               </svg>
-              : <svg width="20" height="21" viewBox="0 0 20 20">
-                <use xlinkHref="/sprite.svg#dashboard" />
-              </svg>
+              : iconName === 'menu'
+                ? <svg width="24" height="16">
+                  <use xlinkHref="/sprite.svg#menu-icon" />
+                </svg>
+                : <svg width="44" height="44">
+                  <use xlinkHref="/sprite.svg#search" />
+                </svg>
       }
     </span>
   );
 }
-
-export default UiIcons;

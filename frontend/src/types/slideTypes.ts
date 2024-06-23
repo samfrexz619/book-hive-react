@@ -1,4 +1,5 @@
 export interface SlideItem {
   id: string;
-  item: string;
+  imageSizes: string[];
+  alt: string;
 }
