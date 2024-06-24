@@ -25,6 +25,7 @@ export default {
         'grey1': '#C9C5D0',
         'grey2': '#787680',
         'pry': '#5D5791',
+        'surface': '#F5FAFB',
       }
     },
   },
