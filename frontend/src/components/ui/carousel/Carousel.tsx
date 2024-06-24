@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { SlideItem } from '@/types/slideTypes';
+import { SlideItem } from '@/types/landingTypes';
 import CarouselIndicator from './CarouselIndicator';
 // import CarouselItem from './CarouselItem';
 

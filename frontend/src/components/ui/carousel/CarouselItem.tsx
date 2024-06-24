@@ -1,6 +1,6 @@
 import React from 'react';
 import { clsx as cn } from "clsx";
-import { SlideItem } from '@/types/slideTypes';
+import { SlideItem } from '@/types/landingTypes';
 
 interface Props {
   slideItem: SlideItem;

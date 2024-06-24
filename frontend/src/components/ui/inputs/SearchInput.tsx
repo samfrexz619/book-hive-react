@@ -11,8 +11,6 @@ const SearchInput: React.FC<Props> = (props) => {
       <button className='h-full border-t border-l border-b border-black1 w-[109px] flex items-center justify-center gap-x-2'>
         <span className='text-xs'>Categories</span>
         <Icons iconName='down' />
-        {/* <span className='absolute top-[18px] right-4'>
-        </span> */}
       </button>
       <input
         type="search"
