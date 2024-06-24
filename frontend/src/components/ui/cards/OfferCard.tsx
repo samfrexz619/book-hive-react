@@ -21,12 +21,12 @@ const OfferCard: React.FC<Props> = (props) => {
     }`)
 
   return (
-    <div className="w-[264px] h-[250px] text-center lg:text-left lg:h-72 bg-white lg:shadow-md shadow-sm px-4 py-6">
+    <div className="w-264 md:w-full h-[250px] text-center lg:text-left lg:h-72 bg-white lg:shadow-md shadow-sm px-4 py-6">
       <div className={iconCls}>
         <Icons iconName={item.icon} />
       </div>
-      <div>
-        <p className="font-medium text-22 pt-4 pb-2">{item.label}</p>
+      <div className='text-black2'>
+        <p className="font-medium lg:text-22 text-16 pt-4 pb-2">{item.label}</p>
         <p className="py-1 text-14">
           {item.body}
         </p>

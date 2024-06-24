@@ -1,6 +1,7 @@
 import Banner from '@/components/ui/banner/Banner';
 import { OfferCardItems } from '@/types/landingTypes';
 import OfferCard from '@/components/ui/cards/OfferCard';
+import Button from '@/components/ui/button/Button';
 
 
 export const LandingPage = () => {
@@ -51,7 +52,7 @@ export const LandingPage = () => {
 
       <section className='w-full bg-[#F5FAFB] py-10'>
         <div className='w-4/5 mx-auto'>
-          <h3 className='font-medium text-32 text-center'>What We Offer</h3>
+          <h3 className='font-medium lg:text-32 text-24 text-center'>What We Offer</h3>
 
           <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-5 py-8 justify-center'>
             {
@@ -59,6 +60,9 @@ export const LandingPage = () => {
                 <OfferCard key={card.id} cardItem={card} />
               ))
             }
+          </div>
+          <div className='w-264 md:w-[224px] mx-auto mt-5'>
+            <Button btnTitle='Explore' variant='filled' />
           </div>
         </div>
       </section>
