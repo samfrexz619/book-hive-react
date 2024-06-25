@@ -46,7 +46,7 @@ const WhatWeOffer: React.FC<Props> = (props) => {
           ))
         }
       </div>
-      <div className='w-264 md:w-[224px] mx-auto mt-5'>
+      <div className='w-[224px] mx-auto mt-5'>
         <Button btnTitle='Explore' variant='filled' />
       </div>
     </div>

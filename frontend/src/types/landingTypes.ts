@@ -10,3 +10,11 @@ export interface OfferCardItems {
   body: string;
   icon: string;
 }
+
+export interface EbookCardItems {
+  id: string;
+  author: string;
+  bookImage: string;
+  bookTitle: string;
+  price: string;
+}
