@@ -1,10 +1,15 @@
+import { useState } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import logo from '@/assets/images/logo.svg';
 import { Icons } from '../ui/uiIcons/Icons';
 import SearchInput from '../ui/inputs/SearchInput';
+import CategoryModal from '../ui/modals/CategoryModal';
 
 
 export const HeaderLayout = () => {
+
+  const [showModal, setShowModal] = useState(false);
+
   const navLinks = [
     {
       id: '1',
@@ -23,6 +28,10 @@ export const HeaderLayout = () => {
     },
   ];
 
+  const toggleModal = () => {
+    setShowModal(!showModal)
+  }
+
   return (
     <main className='w-full'>
       <header className='w-full bg-white h-20'>
@@ -36,7 +45,7 @@ export const HeaderLayout = () => {
           </Link>
 
           <div className='hidden lg:block'>
-            <SearchInput />
+            <SearchInput toggleModal={toggleModal} />
           </div>
 
           <button className='block lg:hidden'>
@@ -60,6 +69,9 @@ export const HeaderLayout = () => {
       <section className='reset'>
         <Outlet />
       </section>
+      {showModal && <div className='w-full hidden lg:block'>
+        <CategoryModal toggleModal={toggleModal} />
+      </div>}
     </main>
   )
 };

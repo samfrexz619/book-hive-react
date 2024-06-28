@@ -7,9 +7,11 @@ export default {
   theme: {
     extend: {
       spacing: {
+        '38%': '38%',
         '93': '93%',
         '264': '264px',
         '94': '94%',
+        '96%': '96%',
         'foot': 'calc(100% - 840px)',
       },
       fontSize: {
@@ -25,6 +27,8 @@ export default {
         'black1': '#1C1B20',
         'black2': '#171D1E',
         'banner': 'rgba(93, 87, 145, 0.5)',
+        'modal': 'rgba(93, 87, 145, 0.2)',
+        'modal-border': 'rgba(143, 73, 81, 0.14)',
         'card-sm': 'rgba(143, 73, 81, 0.1)',
         'grey1': '#C9C5D0',
         'grey2': '#787680',

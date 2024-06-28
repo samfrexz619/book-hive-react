@@ -2,13 +2,15 @@ import React from 'react';
 import { Icons } from '../uiIcons/Icons';
 
 interface Props {
-
+  toggleModal: () => void;
 }
 
 const SearchInput: React.FC<Props> = (props) => {
+  const { toggleModal } = props;
+
   return (
     <div className='w-[440px] h-11 flex'>
-      <button className='h-full border-t border-l border-b border-black1 w-[109px] flex items-center justify-center gap-x-2'>
+      <button onClick={toggleModal} className='h-full border-t border-l border-b border-black1 w-[109px] flex items-center justify-center gap-x-2'>
         <span className='text-xs'>Categories</span>
         <Icons iconName='down' />
       </button>
