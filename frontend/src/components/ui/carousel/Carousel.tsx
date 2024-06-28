@@ -58,14 +58,16 @@ const Carousel: React.FC<Props> = (props) => {
       >
         {
           slideItems.map((slideItem, idx) => (
-            <picture key={slideItem.id} className={`${currentSlide === idx ? 'block' : 'hidden'} h-[432px] md:h-auto`}>
+            <picture key={slideItem.id} className={`${currentSlide === idx ? 'block' : 'hidden'}`}>
               <source
                 media='(min-width: 768px)'
                 srcSet={slideItem.imageSizes[0]}
+                className=''
               />
               <source
                 media='(min-width: 425px)'
                 srcSet={slideItem.imageSizes[1]}
+                className='h-[500px]'
               />
               <source
                 media='(max-width: 375px)'
@@ -76,7 +78,7 @@ const Carousel: React.FC<Props> = (props) => {
           ))
         }
       </div>
-      <div className='absolute bottom-10 w-full flex justify-center'>
+      <div className='absolute bottom-8 md:bottom-4 lg:bottom-10 w-full flex justify-center'>
         {indicators}
       </div>
     </div>

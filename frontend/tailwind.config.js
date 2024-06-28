@@ -9,6 +9,8 @@ export default {
       spacing: {
         '93': '93%',
         '264': '264px',
+        '94': '94%',
+        'foot': 'calc(100% - 840px)',
       },
       fontSize: {
         '14': '14px',

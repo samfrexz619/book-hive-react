@@ -64,3 +64,18 @@ h6 {
   /* IE and Edge */
   scrollbar-width: none;
 }
+
+.scroller {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 25%;
+  overflow-x: auto;
+  gap: 15px;
+  overscroll-behavior-inline: contain;
+}
+
+.gridImg {
+  inline-size: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
