@@ -26,6 +26,7 @@ export default {
       colors: {
         'black1': '#1C1B20',
         'black2': '#171D1E',
+        'black3': '#47464F',
         'banner': 'rgba(93, 87, 145, 0.5)',
         'modal': 'rgba(93, 87, 145, 0.2)',
         'modal-border': 'rgba(143, 73, 81, 0.14)',
@@ -35,6 +36,7 @@ export default {
         'grey3': '#D5DBDC',
         'pry': '#5D5791',
         'surface': '#F5FAFB',
+        'mobile': 'rgba(0, 0, 0, 0.4)',
       }
     },
   },

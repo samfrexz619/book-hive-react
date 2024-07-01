@@ -19,7 +19,7 @@ const CategoryModal: React.FC<Props> = (props) => {
             <ul className='grid grid-cols-2'>
               {
                 genres.map(genre => (
-                  <li key={genre.id} className='py-3 text-14 hover:bg-modal'>
+                  <li key={genre.id} className='py-3 text-14 hover:bg-surface'>
                     <Link to={genre.path} className='pl-5'>{genre.name}</Link>
                   </li>
                 ))
@@ -32,7 +32,7 @@ const CategoryModal: React.FC<Props> = (props) => {
             <ul className='grid grid-cols-2'>
               {
                 faculty.map(genre => (
-                  <li key={genre.id} className='py-3 text-14 hover:bg-modal'>
+                  <li key={genre.id} className='py-3 text-14 hover:bg-surface'>
                     <Link to={genre.path} className='pl-5'>{genre.name}</Link>
                   </li>
                 ))
@@ -45,7 +45,7 @@ const CategoryModal: React.FC<Props> = (props) => {
             <ul className='w-full'>
               {
                 institution.map(genre => (
-                  <li key={genre.id} className='py-3 w-full text-14 hover:bg-modal'>
+                  <li key={genre.id} className='py-3 w-full text-14 hover:bg-surface'>
                     <Link to={genre.path} className='pl-5'>{genre.name}</Link>
                   </li>
                 ))

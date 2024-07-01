@@ -227,3 +227,21 @@ export const institution = [
     name: 'University Name'
   },
 ]
+
+export const mobileLinks = [
+  {
+    title: 'Genres',
+    id: 1,
+    content: genres,
+  },
+  {
+    title: 'Faculty',
+    id: 2,
+    content: faculty,
+  },
+  {
+    title: 'Institution',
+    id: 3,
+    content: institution,
+  },
+]

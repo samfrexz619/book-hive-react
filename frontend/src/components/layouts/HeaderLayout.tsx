@@ -4,11 +4,13 @@ import logo from '@/assets/images/logo.svg';
 import { Icons } from '../ui/uiIcons/Icons';
 import SearchInput from '../ui/inputs/SearchInput';
 import CategoryModal from '../ui/modals/CategoryModal';
+import MobileNavigation from '../mobileNav/MobileNavigation';
 
 
 export const HeaderLayout = () => {
 
   const [showModal, setShowModal] = useState(false);
+  const [showMobileNav, setShowMobileNav] = useState(false);
 
   const navLinks = [
     {
@@ -32,11 +34,15 @@ export const HeaderLayout = () => {
     setShowModal(!showModal)
   }
 
+  const handleMobileNav = () => {
+    setShowMobileNav(!showMobileNav)
+  }
+
   return (
     <main className='w-full'>
       <header className='w-full bg-white h-20'>
         <nav className='h-full w-93 mx-auto flex items-center justify-between'>
-          <button className='text-black1 block lg:hidden'>
+          <button onClick={handleMobileNav} className='text-black1 block lg:hidden'>
             <Icons iconName='menu' />
           </button>
 
@@ -71,6 +77,9 @@ export const HeaderLayout = () => {
       </section>
       {showModal && <div className='w-full hidden lg:block'>
         <CategoryModal toggleModal={toggleModal} />
+      </div>}
+      {showMobileNav && <div className='w-full block lg:hidden'>
+        <MobileNavigation close={handleMobileNav} />
       </div>}
     </main>
   )

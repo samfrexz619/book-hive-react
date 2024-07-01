@@ -20,7 +20,6 @@ const FeaturedBook: React.FC<Props> = (props) => {
 
   // const [currIndex, setCurrIndex] = useState(0)
 
-
   const ebookItems: EbookCardItems[] = [
     {
       id: '1',

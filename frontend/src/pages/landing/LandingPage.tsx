@@ -31,6 +31,7 @@ export const LandingPage = () => {
       <footer className='w-full'>
         <Footer />
       </footer>
+      {/* <MobileNavigation /> */}
     </section>
   )
 }

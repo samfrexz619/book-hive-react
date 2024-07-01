@@ -1,10 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '@/assets/images/logo.svg';
-import twitter from '@/assets/images/socials/twitter.svg';
-import facebook from '@/assets/images/socials/fb.svg';
-import linkedin from '@/assets/images/socials/in.svg';
-import ig from '@/assets/images/socials/instagram.svg';
+import Socials from './Socials';
 
 interface Props {
 
@@ -107,18 +104,7 @@ const Footer: React.FC<Props> = (props) => {
         <p className='order-2 md:order-1 w-full text-16 md:w-auto text-center lg:text-left pt-8 lg:py-0'>&copy; 2024 COPYRIGHT BookHive.</p>
 
         <div className='flex gap-x-4 order-1 md:order-2 w-full md:w-auto'>
-          <Link to={'#'}>
-            <img src={twitter} alt="X fka twitter logo" className='w-6 lg:w-[35px]' />
-          </Link>
-          <Link to={'#'}>
-            <img src={ig} alt="instagram logo" className='w-6 lg:w-[35px]' />
-          </Link>
-          <Link to={'#'}>
-            <img src={facebook} alt="facebook logo" className='w-6 lg:w-[35px]' />
-          </Link>
-          <Link to={'#'}>
-            <img src={linkedin} alt="LinkedIn logo" className='w-6 lg:w-[35px]' />
-          </Link>
+          <Socials />
         </div>
       </div>
     </div>

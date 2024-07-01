@@ -47,9 +47,18 @@ export const Icons: React.FC<Props> = (props) => {
                           ? <svg width="26" height="32">
                             <use xlinkHref="/sprite.svg#lock" />
                           </svg>
-                          : <svg width="32" height="32">
-                            <use xlinkHref="/sprite.svg#user-group" />
-                          </svg>
+                          : iconName === 'user-group'
+                            ? <svg width="32" height="32">
+                              <use xlinkHref="/sprite.svg#user-group" />
+                            </svg>
+                            : iconName === 'close'
+                              ? <svg width="14" height="14">
+                                <use xlinkHref="/sprite.svg#close" />
+                              </svg>
+                              : <svg width="8" height="14">
+                                <use xlinkHref="/sprite.svg#chev-right" />
+                              </svg>
+
       }
 
     </span>
